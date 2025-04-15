@@ -1,0 +1,29 @@
+technical_indicators:
+  DAYS: 30
+  EMA_PERIODS: [9, 21, 50, 200]
+  MACD_FAST: 12
+  MACD_SLOW: 26
+  MACD_SIGNAL: 9
+  RSI_PERIOD: 14
+  BOLLINGER_PERIOD: 20
+  BOLLINGER_STD_DEV: 2
+  STOCHASTIC_K_PERIOD: 14
+  STOCHASTIC_D_PERIOD: 3
+  ATR_PERIOD: 14
+  ADX_PERIOD: 14
+  PARABOLIC_SAR_ACC_FACTOR: 0.02
+  PARABOLIC_SAR_MAX_ACC_FACTOR: 0.2
+  SUPPORT_RESISTANCE_WINDOW: 20
+  SUPPORT_RESISTANCE_NUM_LEVELS: 5
+
+research:
+  MAX_ARTICLES_PER_SOURCE: 5
+  DISCLAIMERS:
+    - "This article does not contain investment advice or recommendations. Every investment and trading move involves risk, and readers should conduct their own research when making a decision."
+    - "Magazine:"
+  HEADERS:
+    - 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    - 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15'
+    - 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0'
+    - 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    - 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.67'
