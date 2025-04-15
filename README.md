@@ -4,7 +4,6 @@
 
 A sophisticated AI-powered system for Bitcoin market analysis and trading decisions using CrewAI.
 
-##Disclaimer
 
 ## 🚀 Overview
 
