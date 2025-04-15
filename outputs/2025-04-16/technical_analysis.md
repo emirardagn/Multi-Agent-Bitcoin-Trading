@@ -1,1 +1,0 @@
-Detailed Technical Analysis Report for Bitcoin (BTC-USD) completed as above.
