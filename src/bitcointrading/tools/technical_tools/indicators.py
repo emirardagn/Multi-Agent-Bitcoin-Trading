@@ -151,7 +151,7 @@ def find_support_resistance(df, window=parameters["SUPPORT_RESISTANCE_WINDOW"], 
 
 #Main Function That Calculates All Indicators -> tool for trading
 @tool("Calculate technical indicators for BTC-USD")
-def CALCULATE_INDICATORS(days: int = parameters["DAYS"]) -> dict:
+def CALCULATE_INDICATORS() -> dict:
     """Useful for calculating various technical indicators for Bitcoin trading analysis.
     Returns a comprehensive report including:
     - Moving averages (EMA)
@@ -171,6 +171,7 @@ def CALCULATE_INDICATORS(days: int = parameters["DAYS"]) -> dict:
     
     Returns:
         dict: A dictionary containing all calculated indicators and their values"""
+    days: int = parameters["DAYS"]
     end_date = datetime.now()
     start_date = end_date - timedelta(days=days)
     
@@ -229,8 +230,5 @@ def CALCULATE_INDICATORS(days: int = parameters["DAYS"]) -> dict:
             "Resistance_Levels": resistance.tolist()
         }
     }
-    
-    with open('outputs/indicators.json', 'w', encoding='utf-8') as f:
-        json.dump(report, f, ensure_ascii=False, indent=2)
     
     return report

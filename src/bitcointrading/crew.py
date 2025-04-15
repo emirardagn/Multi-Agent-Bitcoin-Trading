@@ -16,6 +16,7 @@ class BitcoinTrading():
         return Agent(
             config=self.agents_config["research_agent"],
             verbose=True,
+            tools=[GET_NEWS]
         )
 
     @agent
@@ -23,6 +24,7 @@ class BitcoinTrading():
         return Agent(
             config=self.agents_config["technical_analyst_agent"],
             verbose=True,
+            tools=[CALCULATE_INDICATORS]
         )
 
     @agent
@@ -37,7 +39,7 @@ class BitcoinTrading():
         return Task(
             config=self.tasks_config["researcher_task"],
             agent=self.research_agent(),
-            output_file='market_research.md',
+            output_file='outputs/market_research.md',
         )
 
     @task
@@ -45,7 +47,7 @@ class BitcoinTrading():
         return Task(
             config=self.tasks_config["technical_analysis_task"],
             agent=self.technical_analyst(),
-            output_file='technical_analysis.md',
+            output_file='outputs/technical_analysis.md',
         )
 
     @task
@@ -53,7 +55,7 @@ class BitcoinTrading():
         return Task(
             config=self.tasks_config["decision_task"],
             agent=self.decider(),
-            output_file='trading_decision.md'
+            output_file='outputs/trading_decision.md'
         )
 
     @crew

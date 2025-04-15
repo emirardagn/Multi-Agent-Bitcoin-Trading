@@ -1,54 +1,121 @@
-# Bitcointrading Crew
+# Bitcoin Trading Analysis System
 
-Welcome to the Bitcointrading Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+A sophisticated AI-powered system for Bitcoin market analysis and trading decisions using CrewAI.
+
+## Overview
+
+This project implements an automated Bitcoin trading analysis system that combines market research, technical analysis, and decision-making capabilities. The system uses CrewAI to coordinate multiple specialized agents that work together to provide comprehensive market insights and trading recommendations.
+
+## Features
+
+- **Market Research Agent**: Scrapes and analyzes Bitcoin market news and sentiment
+- **Technical Analysis Agent**: Performs detailed technical analysis using various indicators
+- **Decision Agent**: Synthesizes research and technical analysis to make trading recommendations
+
+## System Components
+
+### Agents
+
+1. **Research Agent**
+   - Collects market news and developments
+   - Analyzes market sentiment
+   - Tracks regulatory updates
+   - Monitors institutional activity
+
+2. **Technical Analyst**
+   - Analyzes price movements
+   - Calculates technical indicators
+   - Identifies support/resistance levels
+   - Evaluates market structure
+
+3. **Decision Agent**
+   - Synthesizes research and technical analysis
+   - Makes trading recommendations
+   - Provides risk assessment
+   - Suggests entry/exit points
+
+### Tools
+
+- **Research Tools**: News scraping and sentiment analysis
+- **Technical Tools**: Various technical indicators and analysis tools
 
 ## Installation
 
-Ensure you have Python >=3.10 <3.13 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
-
-First, if you haven't already, install uv:
-
+1. Clone the repository:
 ```bash
-pip install uv
+git clone [repository-url]
+cd bitcointrading
 ```
 
-Next, navigate to your project directory and install the dependencies:
-
-(Optional) Lock the dependencies and install them by using the CLI command:
+2. Create and activate a virtual environment:
 ```bash
-crewai install
-```
-### Customizing
-
-**Add your `OPENAI_API_KEY` into the `.env` file**
-
-- Modify `src/bitcointrading/config/agents.yaml` to define your agents
-- Modify `src/bitcointrading/config/tasks.yaml` to define your tasks
-- Modify `src/bitcointrading/crew.py` to add your own logic, tools and specific args
-- Modify `src/bitcointrading/main.py` to add custom inputs for your agents and tasks
-
-## Running the Project
-
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
-
-```bash
-$ crewai run
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
 
-This command initializes the BitcoinTrading Crew, assembling the agents and assigning them tasks as defined in your configuration.
+3. Install dependencies:
+```bash
+pip install -e .
+```
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+## Usage
 
-## Understanding Your Crew
+To run the Bitcoin trading analysis system:
 
-The BitcoinTrading Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+```bash
+python -m bitcointrading.main
+```
 
-## Support
+The system will:
+1. Collect and analyze market data
+2. Perform technical analysis
+3. Generate trading recommendations
+4. Save reports in the `outputs` directory
 
-For support, questions, or feedback regarding the Bitcointrading Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+## Outputs
 
-Let's create wonders together with the power and simplicity of crewAI.
+The system generates three main reports:
+- `market_research.md`: Market news and sentiment analysis
+- `technical_analysis.md`: Technical indicators and price analysis
+- `trading_decision.md`: Final trading recommendations
+
+## Dependencies
+
+- Python 3.10+
+- CrewAI
+- pandas
+- yfinance
+- beautifulsoup4
+- requests
+- numpy
+
+## Project Structure
+
+```
+bitcointrading/
+├── src/
+│   └── bitcointrading/
+│       ├── config/
+│       │   ├── agents.yaml
+│       │   └── tasks.yaml
+│       ├── tools/
+│       │   ├── research_tools/
+│       │   └── technical_tools/
+│       ├── crew.py
+│       └── main.py
+├── outputs/
+├── tests/
+└── pyproject.toml
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+[Your chosen license]
+
+## Contact
+
+For questions or support, please contact [your contact information]

@@ -86,8 +86,4 @@ def GET_NEWS() -> list:
     cointelegraph_news = get_cointelegraph_news()
     cryptonews_news = get_cryptonews_news()
     all_news = cointelegraph_news + cryptonews_news
-    
-    with open('outputs/news.json', 'w', encoding='utf-8') as f:
-        json.dump(all_news, f, ensure_ascii=False, indent=2)
-
     return all_news

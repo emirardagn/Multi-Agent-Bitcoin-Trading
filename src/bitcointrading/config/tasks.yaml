@@ -1,24 +1,33 @@
 researcher_task:
   description: >
-    Conduct thorough research on Bitcoin market news and sentiment.
+    Conduct thorough research on Bitcoin market news and sentiment using available scraping tools.
     Focus on:
-    - Latest market news and developments
+    - Latest market news and developments from major crypto news sources
     - Regulatory updates and announcements
     - Market sentiment indicators
     - Significant events affecting Bitcoin
     - Institutional activity and market movements
+    - Analysis of news content and sources
   expected_output: >
     A comprehensive market research report including:
-    - Summary of key market events
-    - Analysis of market sentiment
+    - Summary of key market events from major news sources
+    - Analysis of market sentiment based on news content
     - Impact assessment of recent developments
     - Potential market-moving factors
+    - Source attribution and credibility assessment
 
 technical_analysis_task:
   description: >
-    Perform detailed technical analysis of Bitcoin price movements.
+    Perform detailed technical analysis of Bitcoin price movements using available indicator tools.
     Analyze:
-    - Key technical indicators (RSI, MACD, Moving Averages)
+    - Key technical indicators:
+      * Moving Averages (EMA)
+      * MACD and RSI
+      * Bollinger Bands
+      * Stochastic Oscillator
+      * VWAP and ATR
+      * ADX and OBV
+      * Parabolic SAR
     - Support and resistance levels
     - Chart patterns and trends
     - Volume analysis
@@ -26,10 +35,12 @@ technical_analysis_task:
   expected_output: >
     A detailed technical analysis report including:
     - Current market structure analysis
-    - Key technical levels and indicators
+    - Key technical levels and indicators with their interpretations
     - Price action analysis
     - Potential price targets and scenarios
     - Risk assessment
+    - Indicator convergence/divergence analysis
+    - Support and resistance level analysis
 
 decision_task:
   description: >
