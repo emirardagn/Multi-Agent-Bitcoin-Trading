@@ -1,5 +1,5 @@
 [project]
-name = "Bitcoin Trading"
+name = "BitcoinTrading"
 version = "0.1.0"
 description = "BitcoinTrading using crewAI"
 authors = [{ name = "Emir Arda Gün", email = "emirardagn@gmail.com" }]
