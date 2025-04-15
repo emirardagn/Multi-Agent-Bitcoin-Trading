@@ -1,4 +1,4 @@
-# Bitcoin Trading Analysis System
+# Multi-Agent Bitcoin Trading Using CrewAI 
 
 **IMPORTANT NOTE:** This project is created solely for academic research purposes and does not constitute financial investment advice. Do not use this project without conducting your own research.
 
