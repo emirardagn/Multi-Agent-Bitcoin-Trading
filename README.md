@@ -1,85 +1,128 @@
 # Bitcoin Trading Analysis System
 
+**IMPORTANT NOTE:** This project is created solely for academic research purposes and does not constitute financial investment advice. Do not use this project without conducting your own research.
+
 A sophisticated AI-powered system for Bitcoin market analysis and trading decisions using CrewAI.
 
-## Overview
+##Disclaimer
+
+## 🚀 Overview
 
 This project implements an automated Bitcoin trading analysis system that combines market research, technical analysis, and decision-making capabilities. The system uses CrewAI to coordinate multiple specialized agents that work together to provide comprehensive market insights and trading recommendations.
 
-## Features
+## ✨ Key Features
 
-- **Market Research Agent**: Scrapes and analyzes Bitcoin market news and sentiment
-- **Technical Analysis Agent**: Performs detailed technical analysis using various indicators
-- **Decision Agent**: Synthesizes research and technical analysis to make trading recommendations
+- **Multi-Agent System**: Coordinated team of specialized AI agents
+- **Real-time Market Analysis**: Continuous monitoring of Bitcoin market conditions
+- **Comprehensive Research**: News aggregation and sentiment analysis
+- **Advanced Technical Analysis**: Multiple technical indicators and pattern recognition
+- **Intelligent Decision Making**: AI-powered trading recommendations
+- **Automated Reporting**: Detailed analysis reports in markdown format
 
-## System Components
+## 🤖 System Architecture
 
-### Agents
+### AI Agents
 
 1. **Research Agent**
-   - Collects market news and developments
-   - Analyzes market sentiment
-   - Tracks regulatory updates
-   - Monitors institutional activity
+   - Market news collection and analysis
+   - Sentiment analysis of market conditions
+   - Regulatory updates monitoring
+   - Institutional activity tracking
 
 2. **Technical Analyst**
-   - Analyzes price movements
-   - Calculates technical indicators
-   - Identifies support/resistance levels
-   - Evaluates market structure
+   - Price movement analysis
+   - Technical indicators calculation
+   - Support/resistance level identification
+   - Market structure evaluation
+   - Volume analysis
+   - Trend analysis
 
 3. **Decision Agent**
-   - Synthesizes research and technical analysis
-   - Makes trading recommendations
-   - Provides risk assessment
-   - Suggests entry/exit points
+   - Research and technical analysis synthesis
+   - Trading recommendations generation
+   - Risk assessment
+   - Entry/exit point suggestions
+   - Position sizing recommendations
 
-### Tools
+### Tools and Capabilities
 
-- **Research Tools**: News scraping and sentiment analysis
-- **Technical Tools**: Various technical indicators and analysis tools
+- **Research Tools**
+  - News scraping and aggregation
+  - Sentiment analysis
+  - Regulatory news tracking
 
-## Installation
+- **Technical Tools**
+  - Moving averages
+  - RSI (Relative Strength Index)
+  - MACD (Moving Average Convergence Divergence)
+  - Bollinger Bands
+  - Volume analysis
+  - Pattern recognition
 
-1. Clone the repository:
+- **Analysis Tools**
+  - Market trend analysis
+  - Volatility measurement
+  - Risk assessment
+  - Position sizing calculations
+
+## 🛠️ Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone [repository-url]
+   cd bitcointrading
+   ```
+
+2. **Create Virtual Environment**
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   pip install -e .
+   ```
+
+4. **Configure Environment Variables**
+   Create a `.env` file with necessary API keys and configurations:
+   ```
+   MODEL=gpt_model
+   OPENAI_API_KEY=open_api_key
+   BINANCE_API_KEY=binance_api_key
+   BINANCE_SECRET_KEY=_binance_secret_key
+   ```
+
+## 📊 Usage
+
+### Running the Analysis System
+
 ```bash
-git clone [repository-url]
-cd bitcointrading
+crewai run -m bitcointrading.main
 ```
 
-2. Create and activate a virtual environment:
-```bash
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-```
+### Output Reports
 
-3. Install dependencies:
-```bash
-pip install -e .
-```
-
-## Usage
-
-To run the Bitcoin trading analysis system:
-
-```bash
-python -m bitcointrading.main
-```
-
-The system will:
-1. Collect and analyze market data
-2. Perform technical analysis
-3. Generate trading recommendations
-4. Save reports in the `outputs` directory
-
-## Outputs
-
-The system generates three main reports:
-- `market_research.md`: Market news and sentiment analysis
+The system generates comprehensive reports in the `outputs` directory:
+- `market_research.md`: Detailed market news and sentiment analysis
 - `technical_analysis.md`: Technical indicators and price analysis
-- `trading_decision.md`: Final trading recommendations
+- `trading_decision.md`: Final trading recommendations and risk assessment
 
-## Dependencies
+### Configuration
+
+Customize agent behavior and analysis parameters in:
+- `src/bitcointrading/config/agents.yaml`
+- `src/bitcointrading/config/tasks.yaml`
+- `src/bitcointrading/config/parameters.yaml`
+
+## 🧪 Testing
+
+Run the test suite:
+```bash
+python -m pytest tests/
+```
+
+## 📚 Dependencies
 
 - Python 3.10+
 - CrewAI
@@ -88,8 +131,11 @@ The system generates three main reports:
 - beautifulsoup4
 - requests
 - numpy
+- scikit-learn
+- matplotlib
+- seaborn
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 bitcointrading/
@@ -97,25 +143,38 @@ bitcointrading/
 │   └── bitcointrading/
 │       ├── config/
 │       │   ├── agents.yaml
-│       │   └── tasks.yaml
+│       │   ├── tasks.yaml
+│       │   └── parameters.yaml
 │       ├── tools/
 │       │   ├── research_tools/
-│       │   └── technical_tools/
+│       │   ├── technical_tools/
+│       │   └── trading_tools/
 │       ├── crew.py
 │       └── main.py
 ├── outputs/
 ├── tests/
-└── pyproject.toml
+├── .env
+├── pyproject.toml
+└── README.md
 ```
 
-## Contributing
+## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions! Please follow these steps:
 
-## License
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
-[Your chosen license]
+## 📞 Contact
 
-## Contact
+For questions, suggestions, or support:
+- Email: [emirardagn@gmail.com]
+- Email: [arda.gun.24752@ozu.edu.tr]
 
-For questions or support, please contact [your contact information]
+## 🙏 Acknowledgments
+
+- CrewAI team for the amazing framework
+- All contributors and supporters of the project
