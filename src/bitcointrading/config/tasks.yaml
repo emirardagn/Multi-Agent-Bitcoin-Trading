@@ -1,4 +1,4 @@
-research_task:
+researcher_task:
   description: >
     Conduct thorough research on Bitcoin market news and sentiment.
     Focus on:
@@ -13,7 +13,6 @@ research_task:
     - Analysis of market sentiment
     - Impact assessment of recent developments
     - Potential market-moving factors
-  agent: researcher
 
 technical_analysis_task:
   description: >
@@ -31,7 +30,6 @@ technical_analysis_task:
     - Price action analysis
     - Potential price targets and scenarios
     - Risk assessment
-  agent: financial_analyst
 
 decision_task:
   description: >
@@ -49,4 +47,3 @@ decision_task:
     - Entry and exit points
     - Risk management strategy
     - Price targets and stop-loss levels
-  agent: decider
