@@ -1,0 +1,29 @@
+Bitcoin Trading Strategies:
+
+1. Technical Analysis Strategies:
+   - Trend Following
+   - Support/Resistance Trading
+   - Breakout Trading
+   - Moving Average Crossovers
+   - RSI Divergence Trading
+
+2. Fundamental Analysis Strategies:
+   - News Trading
+   - Event-Based Trading
+   - Macro Economic Analysis
+   - Regulatory Impact Analysis
+   - Institutional Activity Tracking
+
+3. Risk Management Rules:
+   - Position Sizing (1-2% per trade)
+   - Stop Loss Placement
+   - Take Profit Targets
+   - Risk-Reward Ratio (minimum 1:2)
+   - Portfolio Diversification
+
+4. Market Conditions:
+   - Bull Market Strategies
+   - Bear Market Strategies
+   - Sideways Market Strategies
+   - High Volatility Periods
+   - Low Volatility Periods 

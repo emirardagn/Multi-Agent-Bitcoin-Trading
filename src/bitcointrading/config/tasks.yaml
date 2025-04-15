@@ -1,0 +1,52 @@
+research_task:
+  description: >
+    Conduct thorough research on Bitcoin market news and sentiment.
+    Focus on:
+    - Latest market news and developments
+    - Regulatory updates and announcements
+    - Market sentiment indicators
+    - Significant events affecting Bitcoin
+    - Institutional activity and market movements
+  expected_output: >
+    A comprehensive market research report including:
+    - Summary of key market events
+    - Analysis of market sentiment
+    - Impact assessment of recent developments
+    - Potential market-moving factors
+  agent: researcher
+
+technical_analysis_task:
+  description: >
+    Perform detailed technical analysis of Bitcoin price movements.
+    Analyze:
+    - Key technical indicators (RSI, MACD, Moving Averages)
+    - Support and resistance levels
+    - Chart patterns and trends
+    - Volume analysis
+    - Market structure
+  expected_output: >
+    A detailed technical analysis report including:
+    - Current market structure analysis
+    - Key technical levels and indicators
+    - Price action analysis
+    - Potential price targets and scenarios
+    - Risk assessment
+  agent: financial_analyst
+
+decision_task:
+  description: >
+    Review and synthesize the research and technical analysis reports.
+    Make a final trading decision considering:
+    - Market research findings
+    - Technical analysis results
+    - Risk factors
+    - Market conditions
+    - Potential entry/exit points
+  expected_output: >
+    A final trading decision report including:
+    - Trading recommendation (Buy/Sell/Hold)
+    - Detailed reasoning for the decision
+    - Entry and exit points
+    - Risk management strategy
+    - Price targets and stop-loss levels
+  agent: decider
