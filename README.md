@@ -68,7 +68,7 @@ This project implements an automated Bitcoin trading analysis system that combin
 
 1. **Clone the Repository**
    ```bash
-   git clone [repository-url]
+   git clone [https://github.com/emirardagn/bitcointrading]
    cd bitcointrading
    ```
 
@@ -114,12 +114,6 @@ Customize agent behavior and analysis parameters in:
 - `src/bitcointrading/config/tasks.yaml`
 - `src/bitcointrading/config/parameters.yaml`
 
-## 🧪 Testing
-
-Run the test suite:
-```bash
-python -m pytest tests/
-```
 
 ## 📚 Dependencies
 
